@@ -46,7 +46,10 @@ function fixRecentRunsLabels() {
         const attribute = rankImage.getAttribute('alt');
 
         if (attribute) {
-          rankCell.innerHTML = `<span>${attribute.replace(' place', '')}</span>`;
+          const span = document.createElement('span');
+          span.textContent = attribute.replace(' place', '');
+
+          rankCell.replaceChildren(span);
         }
       }
     });
