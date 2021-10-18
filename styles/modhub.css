@@ -1,0 +1,50 @@
+body.dark.dark :focus {
+  outline: 1px solid #C33BCC !important;
+}
+
+.badge-pill.badge-pill.badge-pill {
+  font-size: 1rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+.badge-pill.badge-pill.badge-pill + .badge-pill.badge-pill.badge-pill {
+  margin-left: 1rem;
+}
+.metadata-label {
+  display: none;
+}
+
+.status-info-container.status-info-container.status-info-container {
+  display: none;
+}
+
+.ticket-title {
+  display: none;
+}
+
+.ticket-label-container.ticket-label-container.ticket-label-container {
+  padding: 0.75rem;
+}
+
+.ticket-body-container.ticket-body-container.ticket-body-container {
+  padding-bottom: 0;
+}
+
+.ticket-label-text.ticket-label-text.ticket-label-text {
+  padding-bottom: 0;
+  margin-bottom: 0.25rem;
+}
+
+.ticket-label-text > div {
+  padding: 0;
+  margin-right: 1rem !important;
+}
+
+body.dark .badge-pill {
+  color: rgb(151, 154, 155);
+}
+
+body.dark .ticket-text-styled {
+  color: #fff;
+}

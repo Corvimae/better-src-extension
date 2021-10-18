@@ -1,0 +1,66 @@
+.pending-carat {
+  display: none !important;
+}
+
+.category-tab {
+  display: block !important;
+  margin-right: 0 !important;
+  border-radius: 0 !important;
+  width: 100%;
+}
+
+.category-tab.active {
+ background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.category-tab-name {
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+#centerwidget {
+  width: calc(100% - 316px) !important;
+}
+
+#widget {
+  width: 316px !important;
+}
+
+#leaderboardform {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0;
+}
+
+#leaderboardform > div:first-of-type {
+  position: relative;
+  width: 200px !important;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#leaderboardform > .color-panel {
+  flex-grow: 1;
+  min-width: 0;
+  align-self: stretch;
+}
+
+.color-panel {
+  border-radius: 0 !important;
+}
+
+div[component-name="GameRecentRunsSidebar"] tr td:last-of-type,
+div[component-name="GameRecentRunsSidebar"] tr th:last-of-type {
+  display: none;
+}
+
+.game-metadata-container {
+  font-size: 14px !important;
+}
+
+.gamemenu-item {
+  font-size: 14px !Important;
+}
