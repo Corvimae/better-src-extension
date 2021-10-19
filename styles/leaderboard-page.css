@@ -116,7 +116,7 @@ div[component-name="GameRecentRunsSidebar"] tr th:last-of-type {
 }
 
 #leaderboardform > div:first-of-type > a {
-  max-width: 200px;
+  width: 200px;
   overflow-x: hidden;
 }
 
@@ -132,7 +132,7 @@ div[component-name="GameRecentRunsSidebar"] tr th:last-of-type {
   height: max-content;
   max-height: max-content;
   border-radius: 0;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .profile-menu-sticky {
@@ -162,4 +162,9 @@ div[component-name="GameRecentRunsSidebar"] tr th:last-of-type {
 
 .src-page-leaderboard #widget.col-auto {
   width: min-content !important;
+  min-width: 300px;
+}
+
+.src-page-leaderboard .widget-container {
+  border-radius: 0 !important;
 }
