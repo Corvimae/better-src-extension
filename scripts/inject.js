@@ -56,13 +56,37 @@ function fixRecentRunsLabels() {
   }
 }
 
+function applyStickyLeaderboardHeaderScrollLogic() {
+  document.addEventListener('scroll', () => {
+    const profileMenu = document.querySelector('#profile-menu');
+
+    if (profileMenu.offsetTop > 0) {
+      profileMenu.classList.add('profile-menu-sticky');
+    } else {
+      profileMenu.classList.remove('profile-menu-sticky');
+    }
+  });
+}
+
+function tagModeratorWidget() {
+  const modWidgetTitle = [...document.querySelectorAll('.widget-title')].find(item => item.textContent === 'Moderators');
+
+  if (modWidgetTitle) {
+    modWidgetTitle.parentElement.parentElement.classList.add('moderator-widget');
+  }
+}
+
 log(`Determining what stylesheets to inject (page type: ${2})...`);
+
 const pageType = getPageType();
 
+document.body.classList.add(`src-page-${pageType}`);
 
 switch (pageType) {
   case 'leaderboard':
     injectCSS('leaderboard-page.css');
+    applyStickyLeaderboardHeaderScrollLogic();
+    tagModeratorWidget();
     break;
 }
 
