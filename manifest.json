@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Corvimae's Better SRC",
-  "version": "1.1",
+  "version": "1.3",
   "description": "Some UX improvements to the usability of speedrun.com.",
   "icons": {
     "48": "icons/icon-48.png",
