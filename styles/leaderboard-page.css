@@ -1,40 +1,40 @@
-.pending-carat {
+.src-page-leaderboard .pending-carat {
   display: none !important;
 }
 
-.category-tab {
+.src-page-leaderboard .category-tab {
   display: block !important;
   margin-right: 0 !important;
   border-radius: 0 !important;
   width: 100%;
 }
 
-.category-tab.active {
+.src-page-leaderboard .category-tab.active {
  background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
-.category-tab-name {
+.src-page-leaderboard .category-tab-name {
   max-width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow-x: hidden;
 }
 
-#centerwidget {
+.src-page-leaderboard #centerwidget {
   width: calc(100% - 316px) !important;
 }
 
-#widget {
+.src-page-leaderboard #widget {
   width: 316px !important;
 }
 
-#leaderboardform {
+.src-page-leaderboard #leaderboardform {
   display: flex;
   flex-direction: row;
   border-radius: 0;
 }
 
-#leaderboardform > div:first-of-type {
+.src-page-leaderboard #leaderboardform > div:first-of-type {
   position: relative;
   width: 100% !important;
   align-items: flex-start;
@@ -42,90 +42,91 @@
   flex-direction: column;
 }
 
-#leaderboardform > .color-panel {
+.src-page-leaderboard #leaderboardform > .color-panel {
   flex-grow: 1;
   min-width: 0;
   align-self: stretch;
 }
 
-.color-panel {
+.src-page-leaderboard .color-panel {
   border-radius: 0 !important;
 }
 
-div[component-name="GameRecentRunsSidebar"] tr td:last-of-type,
-div[component-name="GameRecentRunsSidebar"] tr th:last-of-type {
+.src-page-leaderboard div[component-name="GameRecentRunsSidebar"] tr td:last-of-type,
+.src-page-leaderboard div[component-name="GameRecentRunsSidebar"] tr th:last-of-type {
   display: none;
 }
 
-.game-metadata-container {
+.src-page-leaderboard .game-metadata-container {
   font-size: 14px !important;
 }
 
-.gamemenu-item {
+.src-page-leaderboard .gamemenu-item {
   font-size: 14px !Important;
 }
 
 /** v2 **/
 
-.container {
+.src-page-leaderboard .container {
   width: 100% !important;
   max-width: 100vw;
 }
 
-#centerwidget {
+.src-page-leaderboard #centerwidget {
   padding: 0 !important;
 }
 
-#widget.col-auto {
+.src-page-leaderboard #widget.col-auto {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: max-content;
   padding: 0 !important;
   border-radius: 0 !important;
 }
 
-#widget.col-auto .widget-container {
+.src-page-leaderboard #widget.col-auto .widget-container {
   border-left: 3px solid rgb(34, 37, 34);
   margin-bottom: 0;
 }
 
-#profile-menu,
-.desktop_sidebar_a {
+.src-page-leaderboard #profile-menu,
+.src-page-leaderboard .desktop_sidebar_a {
   margin-bottom: 0 !important;
 }
 
-.maincontent {
+.src-page-leaderboard .maincontent {
   border-top: 3px solid rgb(34, 37, 34);
 }
 
-#centerwidget {
+.src-page-leaderboard #centerwidget {
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: [categories] max-content [leaderboard] 1fr;
   grid-template-rows: max-content 1fr;
 }
 
-.maincontent,
-#leaderboardform {
-  display: contents;
+.src-page-leaderboard .maincontent,
+.src-page-leaderboard #leaderboardform {
+  display: contents !important;
 }
 
-#leaderboardform > div:first-of-type {
+.src-page-leaderboard #leaderboardform > div:first-of-type {
   grid-column: categories / categories;
   height: 100%;
   background-color: rgba(32, 32, 32, 0.8);
 }
 
-#leaderboardform > div:first-of-type > a {
+.src-page-leaderboard #leaderboardform > div:first-of-type > a {
   width: 200px;
   overflow-x: hidden;
 }
 
-#leaderboardform > .color-panel {
+.src-page-leaderboard #leaderboardform > .color-panel {
   grid-column: leaderboard / leaderboard;
   grid-row: span 2;
 }
 
-#profile-menu {
+.src-page-leaderboard #profile-menu {
   position: sticky;
   top: 56px;
   grid-column: span 2;
@@ -135,15 +136,15 @@ div[component-name="GameRecentRunsSidebar"] tr th:last-of-type {
   z-index: 999;
 }
 
-.profile-menu-sticky {
+.src-page-leaderboard .profile-menu-sticky {
   background-color: #222 !important;
 }
 
-.moderator-widget {
+.src-page-leaderboard .moderator-widget {
   grid-row: 1;
 }
 
-#leaderboarddiv td {
+.src-page-leaderboard #leaderboarddiv td {
   font-size: 13px;
 }
 
@@ -167,4 +168,12 @@ div[component-name="GameRecentRunsSidebar"] tr th:last-of-type {
 
 .src-page-leaderboard .widget-container {
   border-radius: 0 !important;
+}
+
+.src-page-leaderboard .leaderboard-arrows {
+  display: none !important;
+}
+
+.src-page-leaderboard  #leaderboarddiv .leaderboard-sticky-col {
+  background-color: transparent !important;
 }

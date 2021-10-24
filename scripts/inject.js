@@ -2,16 +2,6 @@ function log(content) {
   console.log('[Corvimae\'s Better SRC]', content);
 }
 
-function injectCSS(filename) {
-  var style = document.createElement('link');
-  style.rel = 'stylesheet';
-  style.type = 'text/css';
-  style.href = browser.runtime.getURL(`styles/${filename}`);
-
-  document.head.appendChild(style);
-  log(`Injected ${filename}.`);
-}
-
 function getWidget(name) {
   return document.querySelector(`div[component-name="${name}"]`);
 }
@@ -25,7 +15,6 @@ function getPageType() {
 }
 
 function hideCommentsWidget() {
-  
   const widget = getWidget('CommentsWidget');
 
   if (widget) {
@@ -76,7 +65,7 @@ function tagModeratorWidget() {
   }
 }
 
-log(`Determining what stylesheets to inject (page type: ${2})...`);
+log(`Page type: ${2}`);
 
 const pageType = getPageType();
 
@@ -84,7 +73,6 @@ document.body.classList.add(`src-page-${pageType}`);
 
 switch (pageType) {
   case 'leaderboard':
-    injectCSS('leaderboard-page.css');
     applyStickyLeaderboardHeaderScrollLogic();
     tagModeratorWidget();
     break;
