@@ -108,7 +108,7 @@
   border-top: 3px solid rgb(34, 37, 34);
 }
 
-.src-page-leaderboard #centerwidget {
+.src-page-leaderboard .content-column {
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: [categories] max-content [leaderboard] 1fr;
@@ -189,4 +189,12 @@
 
 .src-page-leaderboard  #leaderboarddiv .leaderboard-sticky-col {
   background-color: transparent !important;
+}
+
+#app main > div {
+  padding: 0 !important;
+}
+
+#app .sidebar-layout {
+  gap: unset;
 }
